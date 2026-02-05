@@ -21,7 +21,7 @@ public class Argyle {
         for (int i = 0; i < rug.length; i++) {
             for (int j = 0; j < rug[i].length; j++) {
                 String emoji;
-                if ((i + j) % 4 == 0) {
+                if (((i - j) % 5 == 0) || ((i + j) % 5 == 0)) {
                     emoji = "🥕";
                 } else {
                     emoji = "💻";
@@ -30,5 +30,8 @@ public class Argyle {
             }
         }
         return rug;
-    }
   }
+}
+ 
+
+
